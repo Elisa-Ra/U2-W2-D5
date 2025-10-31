@@ -30,78 +30,6 @@
               width="100"
               height="42"
           /></a>
-
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Tv Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recently Added</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My List</a>
-              </li>
-            </ul>
-            <div class="ms-auto">
-              <ul class="navbar-nav d-flex align-items-center mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    ><i class="fas fa-search"></i
-                  ></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">KIDS</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="fas fa-bell"></i></a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    <img
-                      src="./assets/avatar.png"
-                      alt="avatar"
-                      width="30"
-                      height="30"
-                    />
-                  </a>
-                  <ul class="dropdown-menu dropdown-menu-end">
-                    <li>
-                      <a class="dropdown-item" href="profile.html">Profilo</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="settings.html"
-                        >Impostazioni</a
-                      >
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
       </nav>
     </header>
@@ -153,62 +81,86 @@
               <!-- ROW 2 -->
               <div class="row w-100 px-4">
                 <div class="col-12">
+                  <p class="text-secondary mb-1">Maturity Settings:</p>
                   <button
                     type="button"
-                    class="btn btn-secondary text-start rounded-0 mb-4"
+                    class="btn btn-secondary text-start rounded-0 mb-4 mt-2"
                   >
                     ALL MATURITY RATINGS
                   </button>
-                </div>
-                <div class="col">
-                  <p class="text-secondary mb-1">Language:</p>
-                  <div class="dropdown mb-4">
-                    <button
-                      class="btn btn-outline-light dropdown-toggle rounded-0 py-1"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      <span class="me-3">English</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Italian</a></li>
-                      <li><a class="dropdown-item" href="#">Spanish</a></li>
-                      <li><a class="dropdown-item" href="#">French</a></li>
-                    </ul>
-                  </div>
+
+                  <p>
+                    Show titles of <strong>all maturiry ratings </strong>for
+                    this profile
+                  </p>
+                  <button
+                    type="button"
+                    class="btn btn-outline-light rounded-0 px-4 mb-4"
+                  >
+                    EDIT
+                  </button>
                 </div>
                 <hr />
               </div>
               <!-- ROW 3 -->
               <div class="row w-100 px-4">
-                <div class="col-12">
-                  <button
-                    type="button"
-                    class="btn btn-secondary w-100 text-start rounded-0 mb-4"
-                  >
-                    Strive Student
-                  </button>
-                </div>
-                <div class="col">
-                  <p class="text-secondary mb-1">Language:</p>
-                  <div class="dropdown mb-4">
-                    <button
-                      class="btn btn-outline-light dropdown-toggle rounded-0 py-1"
-                      type="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
+                <div class="col-12 px-0">
+                  <p class="text-secondary mb-1">Autoplay Controls</p>
+                  <div class="form-check form-check-inline me-0">
+                    <input
+                      class="form-check-input rounded-0 bg-dark fs-4"
+                      type="checkbox"
+                      value=""
+                      id="defaultCheck1"
+                    />
+                    <label
+                      class="form-check-label align-middle"
+                      for="defaultCheck1"
                     >
-                      <span class="me-3">English</span>
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Italian</a></li>
-                      <li><a class="dropdown-item" href="#">Spanish</a></li>
-                      <li><a class="dropdown-item" href="#">French</a></li>
-                    </ul>
+                      Autoplay next episode in a series on all devices.
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline me-0">
+                    <input
+                      class="form-check-input rounded-0 bg-dark fs-4"
+                      type="checkbox"
+                      value=""
+                      id="defaultCheck2"
+                    />
+                    <label class="form-check-label" for="defaultCheck2">
+                      Autoplay previews while browsing on all devices.
+                    </label>
                   </div>
                 </div>
-                <hr />
+              </div>
+            </div>
+          </div>
+          <hr class="w-100" />
+          <div class="container">
+            <div class="row row-cols-3 gx-0">
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-light rounded-0 px-4"
+                >
+                  SAVE
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-light rounded-0 px-4"
+                >
+                  CANCEL
+                </button>
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-light rounded-0 px-4"
+                >
+                  DELETE PROFILE
+                </button>
               </div>
             </div>
           </div>
